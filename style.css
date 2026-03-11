@@ -93,11 +93,12 @@ section:nth-child(even) {
 nav {
     height: 100px;
     width: 100%;
-    max-width: 100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
 }
 
  .nav__link--list {
@@ -381,3 +382,22 @@ transition: all 300ms ease;
   transform: translateX(60px) ;
   opacity: 1;
 }
+
+/* Small phones, tablets, large smartphones */
+@media (max-width: 768px) {
+nav {
+  height: 68px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.about-me__info--para {
+  font-size: 18px;
+}
+
+.language {
+  width: calc(100% / 3);
+}
+
